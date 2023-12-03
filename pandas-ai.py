@@ -4,10 +4,16 @@ from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
 import matplotlib.pyplot as plt
 
-st.title("AI Data Visualization")
+st.title("pandas-ai streamlit interface")
+
+st.write(
+    "A demo interface for [PandasAI](https://github.com/gventuri/pandas-ai)")
+st.write(
+    "Looking for an example *.csv-file?, check [here](https://gist.github.com/netj/8836201)."
+)
 
 
-st.session_state.openai_key = "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"
+st.session_state.openai_key = st.secrets['OPENAI_API_KEY']
 st.session_state.prompt_history = []
 st.session_state.df = None
 
