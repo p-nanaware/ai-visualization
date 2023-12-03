@@ -4,13 +4,7 @@ from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
 import matplotlib.pyplot as plt
 
-st.title("pandas-ai streamlit interface")
-
-st.write(
-    "A demo interface for [PandasAI](https://github.com/gventuri/pandas-ai)")
-st.write(
-    "Looking for an example *.csv-file?, check [here](https://gist.github.com/netj/8836201)."
-)
+st.title("AI Visualization")
 
 
 st.session_state.openai_key = st.secrets['OPENAI_API_KEY']
