@@ -3,11 +3,12 @@ import pandas as pd
 from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
 import matplotlib.pyplot as plt
+import os
 
 st.title("AI Visualization")
 
 
-st.session_state.openai_key = "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"
+st.session_state.openai_key = os.getenv("OPENAI_API_KEY")
 st.session_state.prompt_history = []
 st.session_state.df = None
 
