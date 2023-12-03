@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 st.title("AI Visualization")
 
 
-st.session_state.openai_key = st.secrets['OPENAI_API_KEY']
+st.session_state.openai_key = "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"
 st.session_state.prompt_history = []
 st.session_state.df = None
 
