@@ -7,8 +7,8 @@ import os
 
 st.title("AI Visualization")
 
-
 st.session_state.openai_key = os.getenv("OPENAI_API_KEY")
+
 st.session_state.prompt_history = []
 st.session_state.df = None
 

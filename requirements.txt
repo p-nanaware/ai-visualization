@@ -1,4 +1,4 @@
-pandasai
+pandasai==1.5.5
 streamlit
 matplotlib
 BeautifulSoup4
